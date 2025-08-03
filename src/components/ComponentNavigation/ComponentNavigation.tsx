@@ -9,9 +9,10 @@ const ComponentNavigation = () => {
       </a>
     </div>
   ));
+
   return (
     <nav className={style.nav}>
-      <div>{showCategories}</div>
+      <ul>{showCategories}</ul>
     </nav>
   );
 };

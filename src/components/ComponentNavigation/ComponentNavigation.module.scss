@@ -1,0 +1,43 @@
+@use "../../styles/variables" as v;
+@use "../../styles/mixins" as m;
+
+.nav {
+  & > ul {
+    display: flex;
+    gap: 40px;
+  }
+}
+
+.link {
+  position: relative;
+  color: v.$second-bg-color;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.4px;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: v.$box-chadow-color;
+
+    &::after {
+      content: "";
+      width: 100%;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: v.$main-rgba-color;
+    transition: all 0.3s ease;
+  }
+}
+@include m.tablet {
+  .nav {
+    display: none;
+  }
+}

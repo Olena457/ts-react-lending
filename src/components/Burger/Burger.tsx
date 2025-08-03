@@ -2,14 +2,14 @@ import { useEffect } from "react";
 import clsx from "clsx";
 import { mainCategories } from "../../api/categoriesMain";
 import crossIcon from "../../assets/icons/main/crossIcon.svg";
-import styles from "./burgerMenu.module.scss";
+import styles from "./BurgerMenu.module.scss";
 
 interface Props {
   isOpen: boolean;
   onClick: () => void;
 }
 
-const BurgerMenu: React.FC<Props> = ({ isOpen, onClick }) => {
+const Burger: React.FC<Props> = ({ isOpen, onClick }) => {
   useEffect(() => {
     if (isOpen) {
       document.body.classList.add("no-scroll");
@@ -38,4 +38,4 @@ const BurgerMenu: React.FC<Props> = ({ isOpen, onClick }) => {
   );
 };
 
-export default BurgerMenu;
+export default Burger;

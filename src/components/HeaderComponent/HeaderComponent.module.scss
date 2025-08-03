@@ -1,9 +1,9 @@
-@import "../../styles/variables";
-@import "../../styles/mixins";
+@use "../../styles/variables" as v;
+@use "../../styles/mixins" as m;
 
 .header {
   padding-block: 28px;
-  background-color: $main-second-color;
+  background-color: v.$main-second-color;
 }
 .wrapper {
   display: flex;
@@ -16,7 +16,8 @@
     width: 50px;
   }
 }
-@include mobile {
+
+@include m.mobile {
   .burger {
     & > img {
       width: 40px;

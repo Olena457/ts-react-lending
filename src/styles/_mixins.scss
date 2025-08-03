@@ -1,22 +1,22 @@
-@import "./variables";
+@use "./variables" as v;
 
 @mixin desctop {
-  @media (max-width: $desktop-size) {
+  @media (max-width: v.$desktop-size) {
     @content;
   }
 }
 @mixin tablet {
-  @media (max-width: $tablet-size) {
+  @media (max-width: v.$tablet-size) {
     @content;
   }
 }
 @mixin mobile {
-  @media (max-width: $mobile-size) {
+  @media (max-width: v.$mobile-size) {
     @content;
   }
 }
 @mixin small-mobile {
-  @media (max-width: $mobile-smal-size) {
+  @media (max-width: v.$mobile-smal-size) {
     @content;
   }
 }

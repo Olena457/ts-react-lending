@@ -1,4 +1,4 @@
-@import "../../styles/mixins";
+@use "../../styles/mixins" as m;
 
 .logo {
   transition-duration: 0.3s ease;
@@ -14,7 +14,7 @@
     color: $text-color;
   }
 }
-@include table {
+@include m.table {
   .logo > img {
     max-width: 150px;
   }

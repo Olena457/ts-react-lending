@@ -1,5 +1,5 @@
-@import "../../styles/variables";
-@import "../../styles/mixins";
+@use "../../styles/variables" as v;
+@use "../../styles/mixins" as m;
 
 .burger {
   position: absolute;
@@ -7,7 +7,7 @@
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: $main-bg-color;
+  background-color: v.$main-bg-color;
   z-index: 10000;
 
   & > ul {
@@ -32,14 +32,14 @@
 }
 .link {
   position: relative;
-  color: $second-bg-color;
+  color: v.$second-bg-color;
   font-size: 32px;
   line-height: 30px;
   letter-spacing: 0.4px;
   transition: color 0.3s ease;
 
   &:hover {
-    color: $box-chadow-color;
+    color: v.$box-chadow-color;
 
     &::after {
       content: "";
@@ -53,11 +53,11 @@
     left: 0;
     height: 2px;
     width: 0;
-    background-color: $main-rgba-color;
+    background-color: v.$main-rgba-color;
     transition: all 0.3s ease;
   }
 }
-@include mobile {
+@include m.mobile {
   .close {
     width: 40px;
     height: 40px;
