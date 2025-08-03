@@ -1,0 +1,21 @@
+@import "../../styles/mixins";
+
+.logo {
+  transition-duration: 0.3s ease;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.text {
+  transition-duration: 0.3s ease;
+
+  &:hover {
+    color: $text-color;
+  }
+}
+@include table {
+  .logo > img {
+    max-width: 150px;
+  }
+}
