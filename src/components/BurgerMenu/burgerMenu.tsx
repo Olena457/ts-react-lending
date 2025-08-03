@@ -4,12 +4,12 @@ import { mainCategories } from "../../api/categoriesMain";
 import crossIcon from "../../assets/icons/main/crossIcon.svg";
 import styles from "./burgerMenu.module.scss";
 
-interface BurgerMenuProps {
+interface Props {
   isOpen: boolean;
   onClick: () => void;
 }
 
-const BurgerMenu: React.FC<BurgerMenuProps> = ({ isOpen, onClick }) => {
+const BurgerMenu: React.FC<Props> = ({ isOpen, onClick }) => {
   useEffect(() => {
     if (isOpen) {
       document.body.classList.add("no-scroll");
