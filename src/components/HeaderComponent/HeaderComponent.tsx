@@ -15,7 +15,7 @@ const HeaderComponent: React.FC<Props> = ({ onClickBurger }) => {
           <BrandComponent />
           <ComponentNavigation />
           <button className={styles.burger} onClick={onClickBurger}>
-            <img src={burgerIcon} alt="burger" />
+            <img src={burgerIcon} alt="burger" className={styles.imageBurger} />
           </button>
         </div>
       </div>

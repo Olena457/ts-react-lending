@@ -1,6 +1,14 @@
 @use "../../styles/mixins" as m;
+@use "../../styles/variables" as v;
 
+.logoWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .logo {
+  display: flex;
+  justify-content: center;
   transition-duration: 0.3s ease;
   &:hover {
     transform: scale(1.05);
@@ -8,13 +16,15 @@
 }
 
 .text {
+  display: flex;
+  align-self: center;
   transition-duration: 0.3s ease;
-
+  color: v.$second-bg-color;
   &:hover {
-    color: $text-color;
+    color: v.$text-color;
   }
 }
-@include m.table {
+@include m.tablet {
   .logo > img {
     max-width: 150px;
   }

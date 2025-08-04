@@ -3,10 +3,12 @@ import logoIcon from "../../assets/icons/logo/logo.svg";
 
 const BrandComponent = () => {
   return (
-    <a className={style.logo} href="#">
-      <img src={logoIcon} alt="logo" />
-      <h5 className={style.text}>InterSpase</h5>
-    </a>
+    <div className={style.logoWrapper}>
+      <a className={style.logo} href="#">
+        <img src={logoIcon} alt="logo" />
+        <h4 className={style.text}>InterSpase</h4>
+      </a>
+    </div>
   );
 };
 

@@ -10,17 +10,19 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .burger {
-  display: block;
-  & > img {
-    width: 50px;
+  display: none;
+  & > .imageBurger {
+    width: 40px;
   }
 }
 
-@include m.mobile {
+@media (min-width: v.$mobile-small-size) and (max-width: calc(v.$tablet-size )) {
   .burger {
-    & > img {
-      width: 40px;
+    display: block;
+    & > .imageBurger {
+      width: 50px;
     }
   }
 }

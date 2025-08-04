@@ -7,7 +7,7 @@
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: v.$main-bg-color;
+  background-color: v.$main-burger-color;
   z-index: 10000;
 
   & > ul {
@@ -20,8 +20,16 @@
     gap: 20px;
   }
 }
+
+@include m.mobile {
+  .close {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 .none {
-  left: -500px;
+  left: -5000px;
 }
 
 .close {
@@ -30,7 +38,7 @@
   right: 20px;
   cursor: pointer;
 }
-.link {
+.linkBurger {
   position: relative;
   color: v.$second-bg-color;
   font-size: 32px;
@@ -42,7 +50,7 @@
     color: v.$box-chadow-color;
 
     &::after {
-      content: "";
+      // content: "";
       width: 100%;
     }
   }
@@ -55,11 +63,5 @@
     width: 0;
     background-color: v.$main-rgba-color;
     transition: all 0.3s ease;
-  }
-}
-@include m.mobile {
-  .close {
-    width: 40px;
-    height: 40px;
   }
 }

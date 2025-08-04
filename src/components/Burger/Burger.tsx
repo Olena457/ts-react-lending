@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import clsx from "clsx";
 import { mainCategories } from "../../api/categoriesMain";
 import crossIcon from "../../assets/icons/main/crossIcon.svg";
-import styles from "./BurgerMenu.module.scss";
+import styles from "./Burger.module.scss";
 
 interface Props {
   isOpen: boolean;
@@ -23,11 +23,11 @@ const Burger: React.FC<Props> = ({ isOpen, onClick }) => {
   }, [isOpen]);
 
   const showCategories = mainCategories.map((item) => (
-    <div key={item.id}>
-      <a href={item.link} onClick={onClick} className={styles.link}>
+    <ul key={item.id}>
+      <a href={item.link} onClick={onClick} className={styles.linkBurger}>
         {item.category}
       </a>
-    </div>
+    </ul>
   ));
 
   return (
