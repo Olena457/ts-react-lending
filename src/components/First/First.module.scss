@@ -1,0 +1,77 @@
+@use "../../styles/variables" as v;
+@use "../../styles/mixins" as m;
+
+.started {
+  position: relative;
+  padding-block: 200px 200px;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0px 0px 0px 290px;
+  z-index: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+    // background-color: rgba(19, 10, 4, 0.7);
+    // background-color: v.$main-rgba-color;
+    z-index: 1;
+    border-radius: inherit;
+  }
+
+  > * {
+    position: relative;
+    z-index: 2;
+  }
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  max-width: 600px;
+}
+
+.title {
+  font-size: 80px;
+  line-height: 96px;
+  letter-spacing: 0.22px;
+  //   color: v.$main-bg-color;
+
+  color: v.$btn-light-color;
+}
+.text {
+  font-size: 22px;
+  color: v.$border-color;
+  //   color: v.$second-bg-color;
+}
+.btn {
+  background-color: v.$btn-rgb-color;
+  border-color: v.$btn-light-color;
+}
+@include m.tablet {
+  .started {
+    padding-block: 100px;
+  }
+  .wrapper {
+    gap: 26px;
+  }
+  .title {
+    font-size: 64px;
+    line-height: 72px;
+  }
+}
+@include m.mobile {
+  .started {
+    border-radius: 0px 0px 0px 190px;
+  }
+  .wrapper {
+    gap: 40px;
+  }
+  .title {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}

@@ -1,0 +1,38 @@
+@use "../../styles/variables" as v;
+@use "../../styles/mixins" as m;
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: fit-content;
+  padding: 14px 20px 14px 34px;
+  border-radius: 12px;
+  font-size: 18px;
+  color: v.$second-bg-color;
+  transition: all 0.3s;
+
+  & > img {
+    position: relative;
+    right: 0;
+    transition: backgraund 0.3s;
+  }
+  & > hover {
+    transform: scale(1.05);
+    & > img {
+      right: -5;
+    }
+  }
+}
+
+@include m.tablet {
+  .btn {
+    gap: 20px;
+    padding: 10px 20px 10px 30px;
+    font-size: 18px;
+
+    & > img {
+      width: 22px;
+    }
+  }
+}

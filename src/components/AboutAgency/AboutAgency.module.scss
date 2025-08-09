@@ -1,0 +1,126 @@
+@use "../../styles/variables" as v;
+@use "../../styles/mixins" as m;
+
+.about {
+  margin-bottom: 140px;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  gap: 20px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 50%;
+}
+
+.title {
+  font-size: 50px;
+  line-height: 65px;
+  letter-spacing: 0.22px;
+  color: v.$second-bg-color;
+}
+.text {
+  font-size: 22px;
+  color: v.$second-bg-color;
+  line-height: 33px;
+  letter-spacing: 0.22px;
+  margin-bottom: 50px;
+}
+.call {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  padding: 30px;
+  border-radius: 50%;
+  background-color: v.$second-bg-color;
+}
+.tel {
+  display: flex;
+  flex-direction: column;
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: 0.22px;
+}
+
+.number {
+  font-size: 24px;
+  line-height: 36px;
+}
+.btn {
+  background-color: v.$btn-rgb-color;
+  border-color: v.$btn-light-color;
+}
+.img {
+  width: 50%;
+  height: 635px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0px 123px 0px 123px;
+}
+@include m.tablet {
+  .about {
+    margin-bottom: 100px;
+  }
+  .wrapper {
+    text-wrap: wrap;
+  }
+  .content {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  .title {
+    font: size 32px;
+    line-height: 40px;
+  }
+  .text {
+    font-size: 18px;
+    line-height: 33px;
+  }
+  .icon {
+    padding: 20px;
+  }
+
+  .tel {
+    font-size: 18px;
+    line-height: 33px;
+  }
+  .number {
+    font-size: 20px;
+  }
+  .img {
+    width: 100%;
+    border-radius: 0px 226px 0px 123px;
+  }
+}
+@include m.mobile {
+  .about {
+    margin-bottom: 80px;
+  }
+  .wrapper {
+    flex-direction: column;
+  }
+  .content {
+    margin-bottom: 30px;
+  }
+  .title {
+    font-size: 42px;
+    line-height: 52px;
+  }
+  .img {
+    width: 100%;
+    border-radius: 0px 123px;
+  }
+}
