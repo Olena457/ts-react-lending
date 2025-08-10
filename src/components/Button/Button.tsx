@@ -9,7 +9,7 @@ type Props = {
 const Button: React.FC<Props> = ({ text, icon, className }) => {
   return (
     <button className={`${styles.btn} ${className}`}>
-      <span>{text} </span>
+      <span>{text}</span>
       <img src={icon} alt="Icon"></img>
     </button>
   );

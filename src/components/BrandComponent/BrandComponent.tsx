@@ -6,7 +6,7 @@ const BrandComponent = () => {
     <div className={style.logoWrapper}>
       <a className={style.logo} href="#">
         <img src={logoIcon} alt="logo" />
-        <h4 className={style.text}>InterSpase</h4>
+        <h4 className={style.text}>InterSpace</h4>
       </a>
     </div>
   );

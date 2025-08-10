@@ -5,7 +5,7 @@ type Props = {
   className: string;
   text: string;
 };
-const TitleComponent: React.FC<Props> = ({ tag, className, text }) => {
+const Title: React.FC<Props> = ({ tag, className, text }) => {
   return React.createElement(tag, { className }, text);
 };
-export default TitleComponent;
+export default Title;

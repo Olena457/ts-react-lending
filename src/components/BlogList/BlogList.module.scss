@@ -1,0 +1,43 @@
+@use "../../styles/variables" as v;
+@use "../../styles/mixins" as m;
+
+.blogs {
+  margin-bottom: 140px;
+  // background-color: v.$main-bg-color;
+}
+.top {
+  margin-bottom: 70px;
+  text-align: center;
+}
+.titleMain {
+  margin-bottom: 20px;
+  color: v.$second-bg-color;
+  font-size: 48px;
+  line-height: 1.1;
+  letter-spacing: 0.22px;
+}
+.text {
+  margin-inline: auto;
+  color: v.$second-bg-color;
+  min-width: 590px;
+  font-size: 22px;
+  line-height: 1.6;
+  letter-spacing: 0.22;
+}
+.bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+@include m.tablet {
+  .blogs {
+    margin-bottom: 70px;
+  }
+  .top {
+    margin-bottom: 50px;
+  }
+  .bottom {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-inline: 0;
+  }
+}
