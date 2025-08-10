@@ -13,7 +13,8 @@ const First = () => {
         <div className={styles.wrapper} data-aos="fade-right">
           <Title
             tag="h1"
-            text="Let's Create Your Dream Space"
+            text="Your Dream Space Starts Here"
+            // Bring Your Dream Space to Life
             className={styles.title}
           />
 

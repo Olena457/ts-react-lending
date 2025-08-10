@@ -1,0 +1,28 @@
+@use "../../styles/variables" as v;
+@use "../../styles/mixins" as m;
+
+.arrow {
+  position: absolute;
+  bottom: 80px;
+  right: 30px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: box-shadow 0.3s ease;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &:hover {
+    box-shadow: 5px 5px 20px v.$box-chadow-color;
+  }
+}
+@include m.tablet {
+  .arrow {
+    bottom: 60px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+  }
+}

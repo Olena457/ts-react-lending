@@ -1,0 +1,67 @@
+@use "../../styles/variables" as v;
+
+.card {
+  padding: 20px;
+}
+
+.img {
+  position: relative;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 300px;
+  border-radius: 0px 45px 0px 45px;
+  background-repeat: no-repeat;
+}
+.category {
+  position: absolute;
+  top: 223px;
+  left: 24px;
+  padding: 10px;
+  font-size: 16px;
+  color: v.$btn-rgb-color;
+  background-color: v.$main-brand-color;
+  line-height: 1.5;
+  letter-spacing: 0.22px;
+  border-radius: 8px 0px 8px 0px;
+}
+
+.title {
+  margin-bottom: 30px;
+  font-size: 26px;
+  line-height: 1.34;
+  letter-spacing: 0.5px;
+  color: v.$second-bg-color;
+}
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.date {
+  color: v.$second-bg-color;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.22px;
+}
+
+.btn {
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  background-color: v.$btn-rgb-color;
+  border-color: v.$btn-light-color;
+
+  & > img {
+    position: relative;
+    right: 0;
+    transition: chadow 0.3s;
+  }
+
+  &:hover {
+    box-shadow: 0 0 15 v.$btn-light-color;
+  }
+  & > img {
+    right: -6px;
+  }
+}

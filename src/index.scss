@@ -28,11 +28,12 @@ h2,
 h3,
 h4 {
   font-family: "Playfair Display", serif;
-  color: v.$main-brand-color;
+  // color: v.$main-brand-color;
 }
 
 p {
   color: v.$text-color;
+  font-family: "Montserrat", serif;
 }
 
 button {
@@ -45,7 +46,7 @@ button {
 
 a {
   cursor: pointer;
-  color: v.$second-bg-color;
+  color: red;
   text-decoration: none;
 }
 
