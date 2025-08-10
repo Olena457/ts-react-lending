@@ -7,7 +7,8 @@
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: v.$main-burger-color;
+  background-color: v.$main-brand-color;
+  background-color: v.$main-second-color;
   z-index: 10000;
 
   & > ul {
@@ -34,20 +35,20 @@
 
 .close {
   position: absolute;
-  top: 20;
-  right: 20px;
+  top: 30px;
+  right: 40px;
   cursor: pointer;
 }
 .linkBurger {
   position: relative;
-  color: v.$second-bg-color;
+  color: v.$btn-rgb-color;
   font-size: 32px;
   line-height: 30px;
   letter-spacing: 0.4px;
   transition: color 0.3s ease;
 
   &:hover {
-    color: v.$box-chadow-color;
+    color: v.$second-bg-color;
 
     &::after {
       // content: "";

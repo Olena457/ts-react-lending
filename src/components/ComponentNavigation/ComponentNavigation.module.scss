@@ -10,14 +10,16 @@
 
 .link {
   position: relative;
-  color: v.$second-bg-color;
+  // color: v.$second-bg-color;
+  color: v.$btn-rgb-color;
+
   font-size: 20px;
   line-height: 30px;
   letter-spacing: 0.4px;
   transition: color 0.3s ease;
 
   &:hover {
-    color: v.$box-chadow-color;
+    color: v.$second-bg-color;
 
     &::after {
       content: "";

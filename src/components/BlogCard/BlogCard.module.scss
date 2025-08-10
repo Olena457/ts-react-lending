@@ -55,7 +55,7 @@
 }
 
 .category {
-  padding: 10px 15px;
+  padding: 10px;
   font-size: 16px;
   color: v.$btn-light-color;
   background-color: v.$main-brand-color;
@@ -74,10 +74,11 @@
   & > img {
     position: relative;
     right: -6px;
-    transition: shadow 0.3s;
+    transition: all 0.3s;
   }
 
   &:hover {
-    box-shadow: 0 0 15px v.$btn-light-color;
+    background-color: v.$btn-light-color;
+    box-shadow: 0 0 15px v.$btn-rgb-color;
   }
 }

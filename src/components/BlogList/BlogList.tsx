@@ -16,7 +16,7 @@ const BlogList = () => {
           <Title
             tag="h2"
             className={styles.titleMain}
-            text=" The Best Progects"
+            text=" The Best Projects"
           />
 
           <p className={styles.text}>

@@ -43,7 +43,7 @@ const AboutAgency = () => {
           <div
             className={styles.img}
             style={{
-              backgroundImage: "url(./src/assets/img/projects/big.jpg)",
+              backgroundImage: "url(./src/assets/img/projects/business.jpg)",
             }}
             data-aos="fade-up"
           ></div>

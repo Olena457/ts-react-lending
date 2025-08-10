@@ -7,7 +7,9 @@ const First = () => {
   return (
     <section
       className={styles.started}
-      style={{ backgroundImage: "url(./src/assets/img/projects/best.jpg)" }}
+      style={{
+        backgroundImage: "url(./src/assets/img/projects/big.jpg)",
+      }}
     >
       <div className="container">
         <div className={styles.wrapper} data-aos="fade-right">

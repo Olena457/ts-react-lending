@@ -19,7 +19,7 @@ const BlogCard: React.FC<Props> = ({ blog }) => {
         <span className={styles.date}>{`${month} ${date}, ${year}`}</span>
         <div className={styles.bottom}>
           <span className={styles.category}>{category}</span>
-          <Button className={styles.btn} text="More details" icon={arrowLeft} />
+          <Button className={styles.btn} text="More" icon={arrowLeft} />
         </div>
       </div>
     </article>

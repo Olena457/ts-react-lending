@@ -23,7 +23,7 @@ export const blogsData: IBlogList[] = [
     date: 22,
     month: "September",
     year: 2024,
-    category: "Kitchen Interior",
+    category: "Kitchen",
   },
   {
     id: 3,
@@ -50,7 +50,7 @@ export const blogsData: IBlogList[] = [
     date: 12,
     month: "June",
     year: 2025,
-    category: "Commercial Space",
+    category: "Commercial",
   },
   {
     id: 6,
@@ -59,6 +59,6 @@ export const blogsData: IBlogList[] = [
     date: 4,
     month: "May",
     year: 2025,
-    category: "Commercial Space",
+    category: "Office",
   },
 ];
