@@ -1,0 +1,32 @@
+@use "../../styles/mixins" as m;
+@use "../../styles/variables" as v;
+
+.features {
+  padding-bottom: 100px;
+  background-color: v.$main-brand-color;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+@include m.tablet {
+  .features {
+    padding-block: 70px;
+  }
+}
+
+@media (min-width: v.$tablet-size) and (max-width: v.$desktop-size) {
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@include m.tablet {
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@include m.mobile {
+  .wrapper {
+    grid-template-columns: repeat(1fr);
+  }
+}

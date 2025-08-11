@@ -1,0 +1,48 @@
+@use "../../styles/variables" as v;
+@use "../../styles/mixins" as m;
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 110px;
+
+  & > img {
+    max-width: 200px;
+    transition: hover 0.3s;
+  }
+  img:hover {
+    transform: scale(1.05);
+  }
+}
+@include m.tablet {
+  .wrapper {
+    width: 100%;
+    margin-bottom: 50px;
+    gap: 20px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    & > img {
+      max-width: 100px;
+    }
+  }
+  .wrapper::-webkit-scrollbar {
+    display: none;
+  }
+}
+@include m.mobile {
+  .wrapper {
+    & > img {
+      max-width: 60px;
+    }
+  }
+}
+@include m.small-mobile {
+  .wrapper {
+    & > img {
+      max-width: 50px;
+    }
+  }
+}

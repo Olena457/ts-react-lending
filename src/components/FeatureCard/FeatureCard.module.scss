@@ -1,0 +1,50 @@
+@use "../../styles/mixins" as m;
+@use "../../styles/variables" as v;
+
+.icon {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+}
+
+.card {
+  padding: 70px 42px;
+}
+.title {
+  margin-bottom: 20px;
+  font-size: 26px;
+  line-height: 1;
+  letter-spacing: normal;
+  color: v.$second-bg-color;
+}
+.content {
+  margin-bottom: 70px;
+  font-size: 22px;
+  line-height: 1;
+  color: v.$second-bg-color;
+
+  letter-spacing: normal;
+}
+@include m.tablet {
+  .card {
+    padding: 40px 10px;
+  }
+
+  .title {
+    margin-bottom: 10px;
+    font-size: 22px;
+    line-height: 1;
+    color: v.$main-bg-color;
+  }
+  .content {
+    margin-bottom: 40px;
+    font-size: 22px;
+    line-height: 1;
+    color: v.$main-bg-color;
+  }
+}
+@include m.mobile {
+  .card {
+    padding: 20px 10px;
+  }
+}

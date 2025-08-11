@@ -8,9 +8,10 @@
   //   background-color: v.$main-brand-color;
 }
 .title {
-  max-width: 500px;
+  max-width: 650px;
   margin-inline: auto;
-  color: v.$main-brand-color;
+  color: v.$btn-rgb-color;
+  // color: v.$btn-light-color;
   margin-bottom: 50px;
   font-size: 46px;
   line-height: 1.2;
@@ -22,6 +23,7 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
+
 @include m.desktop {
   .wrapper {
     grid-template-columns: repeat(2, 1fr);
@@ -34,12 +36,11 @@
   }
 
   .title {
-    max-width: 400px;
+    max-width: 550px;
     margin-bottom: 30px;
     font-size: 36px;
     line-height: 1.1;
     // color: v.$main-brand-color;
-    color: v.$btn-rgb-color;
     // color: v.$main-brand-color;
 
     letter-spacing: normal;
