@@ -1,9 +1,12 @@
 import React from "react";
 import styles from "./BlogCard.module.scss";
-import arrowLeft from "../../assets/icons/main/arrowLeft.svg";
 import type { IBlogList } from "../../types/IBlogList";
 import TitleComponent from "./../Title/Title";
-import Button from "./../Button/Button";
+import logoIcon from "../../assets/icons/logo/logo.svg";
+
+// import BrandComponent from "./../BrandComponent/BrandComponent";
+// import arrowLeft from "../../assets/icons/main/arrowLeft.svg";
+// import Button from "./../Button/Button";
 
 type Props = {
   blog: IBlogList;
@@ -19,7 +22,10 @@ const BlogCard: React.FC<Props> = ({ blog }) => {
         <span className={styles.date}>{`${month} ${date}, ${year}`}</span>
         <div className={styles.bottom}>
           <span className={styles.category}>{category}</span>
-          <Button className={styles.btn} text="More" icon={arrowLeft} />
+          {/* <BrandComponent /> */}
+          <img src={logoIcon} alt="logo" />
+
+          {/* <Button className={styles.btn} text="More" icon={arrowLeft} /> */}
         </div>
       </div>
     </article>

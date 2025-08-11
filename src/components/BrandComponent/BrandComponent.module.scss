@@ -19,9 +19,9 @@
   display: flex;
   align-self: center;
   transition-duration: 0.3s ease;
-  color: v.$second-bg-color;
+  color: v.$btn-light-color;
   &:hover {
-    color: v.$text-color;
+    color: v.$btn-rgb-color;
   }
 }
 @include m.tablet {

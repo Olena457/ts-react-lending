@@ -46,20 +46,24 @@
 
 .bottom {
   position: absolute;
-  bottom: 20px;
+  bottom: 10px;
   left: 0;
   width: 100%;
   display: flex;
+  align-items: flex-end;
   justify-content: space-between;
   padding: 0 24px;
 }
 
 .category {
-  padding: 10px;
+  display: flex;
+  text-align: center;
+  height: 35px;
+  padding: 5px;
   font-size: 16px;
   color: v.$btn-light-color;
   background-color: v.$main-brand-color;
-  line-height: 1.5;
+  line-height: 1.2;
   letter-spacing: 0.22px;
   border-radius: 0px 8px 0px 8px;
 }

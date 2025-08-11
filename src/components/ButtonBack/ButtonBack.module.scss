@@ -2,12 +2,14 @@
 @use "../../styles/mixins" as m;
 
 .arrow {
-  position: absolute;
-  bottom: 80px;
+  position: fixed;
+  bottom: 30px;
   right: 30px;
+  z-index: 1000;
   display: block;
   width: 50px;
   height: 50px;
+  background-color: v.$second-bg-color;
   border-radius: 50%;
   transition: box-shadow 0.3s ease;
   background-position: center;
@@ -15,12 +17,14 @@
   background-repeat: no-repeat;
 
   &:hover {
+    color: v.$box-chadow-color;
     box-shadow: 5px 5px 20px v.$box-chadow-color;
   }
 }
+
 @include m.tablet {
   .arrow {
-    bottom: 60px;
+    bottom: 20px;
     right: 20px;
     width: 40px;
     height: 40px;

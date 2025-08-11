@@ -1,8 +1,8 @@
-import styles from "./BackButton.module.scss";
+import styles from "./ButtonBack.module.scss";
 
 import homeIcon from "../../assets/icons/main/home.svg";
 
-const BackButton = () => {
+const ButtonBack = () => {
   return (
     <a
       className={styles.arrow}
@@ -12,4 +12,4 @@ const BackButton = () => {
   );
 };
 
-export default BackButton;
+export default ButtonBack;

@@ -10,6 +10,7 @@
   background-color: v.$main-brand-color;
   background-color: v.$main-second-color;
   z-index: 10000;
+  transition: all 0.3 ease-in;
 
   & > ul {
     display: flex;
@@ -21,17 +22,12 @@
     gap: 20px;
   }
 }
-
-@include m.mobile {
-  .close {
-    width: 40px;
-    height: 40px;
-  }
-}
-
 .none {
-  left: -5000px;
+  display: none;
 }
+// .none {
+//   right: -5000px;
+// }
 
 .close {
   position: absolute;
@@ -39,6 +35,7 @@
   right: 40px;
   cursor: pointer;
 }
+
 .linkBurger {
   position: relative;
   color: v.$btn-rgb-color;
@@ -64,5 +61,12 @@
     width: 0;
     background-color: v.$main-rgba-color;
     transition: all 0.3s ease;
+  }
+
+  @include m.mobile {
+    .close {
+      width: 40px;
+      height: 40px;
+    }
   }
 }

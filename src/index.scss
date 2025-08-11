@@ -36,6 +36,14 @@ p {
   font-family: "Montserrat", serif;
 }
 
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", serif;
+}
+
 button {
   border: none;
   cursor: pointer;
@@ -46,7 +54,7 @@ button {
 
 a {
   cursor: pointer;
-  color: red;
+  color: v.$second-bg-color;
   text-decoration: none;
 }
 

@@ -18,7 +18,7 @@ export const mainCategories: MainCategory[] = [
   },
   {
     id: 4,
-    category: "Pages",
+    category: "Projects",
     link: "pages",
   },
   {
