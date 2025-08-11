@@ -25,7 +25,7 @@ const First = () => {
             obstacles into inspiring opportunities.
           </p>
 
-          <Button text="Get Started" className={styles.btn} icon={arrowIcon} />
+          <Button text="Started" className={styles.btn} icon={arrowIcon} />
         </div>
       </div>
     </section>

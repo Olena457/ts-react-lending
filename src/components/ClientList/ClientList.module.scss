@@ -1,0 +1,61 @@
+@use "../../styles/mixins" as m;
+@use "../../styles/variables" as v;
+
+.reviews {
+  margin-bottom: 140px;
+  padding: 100px 50px 120px 50px;
+  background-color: v.$main-brand-color;
+  //   background-color: v.$main-brand-color;
+}
+.title {
+  max-width: 500px;
+  margin-inline: auto;
+  color: v.$main-brand-color;
+  margin-bottom: 50px;
+  font-size: 46px;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: center;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+@include m.desktop {
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@include m.tablet {
+  .reviews {
+    margin-bottom: 70px;
+    padding: 50px 30px;
+  }
+
+  .title {
+    max-width: 400px;
+    margin-bottom: 30px;
+    font-size: 36px;
+    line-height: 1.1;
+    // color: v.$main-brand-color;
+    color: v.$btn-rgb-color;
+    // color: v.$main-brand-color;
+
+    letter-spacing: normal;
+  }
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+@include m.mobile {
+  .title {
+    font-size: 24px;
+  }
+}
+@include m.small-mobile {
+  .title {
+    font-size: 22px;
+  }
+}

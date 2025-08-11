@@ -11,7 +11,7 @@ const BlogList = () => {
 
   return (
     <section id="pages" className={styles.blogs}>
-      <div className={styles.container}>
+      <div className="container">
         <div className={styles.top} data-aos="fade-down">
           <Title
             tag="h2"

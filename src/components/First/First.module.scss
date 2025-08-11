@@ -39,8 +39,8 @@
 .title {
   font-size: 80px;
   width: 100%;
-  line-height: 96px;
-  letter-spacing: 0.22px;
+  line-height: 1;
+  letter-spacing: normal;
   // color: v.$main-bg-color;
   color: v.$second-bg-color;
   // color: v.$btn-light-color;
@@ -63,20 +63,30 @@
   }
   .title {
     width: 100%;
-    font-size: 64px;
-    line-height: 72px;
+    font-size: 54px;
+    line-height: 1;
   }
 }
 @include m.mobile {
   .started {
-    border-radius: 0px 0px 0px 190px;
+    border-radius: 0px 0px 0px 90px;
+  }
+  .btn {
+    margin-left: 30px;
   }
   .wrapper {
+    display: flex;
+    justify-content: center;
     gap: 40px;
   }
   .title {
     width: 100%;
-    font-size: 48px;
-    line-height: 56px;
+    font-size: 42px;
+    line-height: 0.9;
+  }
+}
+@include m.small-mobile {
+  .started {
+    border-radius: 0px 0px 0px 90px;
   }
 }
