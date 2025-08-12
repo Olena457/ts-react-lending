@@ -1,8 +1,8 @@
 import React from "react";
-import styles from "./BlogCard.module.scss";
 import type { IBlogList } from "../../types/IBlogList";
 import TitleComponent from "./../Title/Title";
 import logoIcon from "../../assets/icons/logo/logo.svg";
+import styles from "./BlogCard.module.scss";
 
 // import BrandComponent from "./../BrandComponent/BrandComponent";
 // import arrowLeft from "../../assets/icons/main/arrowLeft.svg";

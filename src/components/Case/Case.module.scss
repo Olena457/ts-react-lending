@@ -1,0 +1,70 @@
+@use "../../styles/variables" as v;
+@use "../../styles/mixins" as m;
+
+.img {
+  position: relative;
+  min-height: 660px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0px 165px 0px 165px;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border: 1px solid v.$main-bg-color;
+    border-radius: 0px 155px 0px 155px;
+    pointer-events: none;
+  }
+}
+// .wrapInfo {
+//   display: flex;
+//   gap: 10px;
+// }
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  align-items: flex-end;
+  padding-top: 20px;
+}
+
+.title {
+  font-size: 28px;
+  color: v.$second-bg-color;
+  line-height: 1.2;
+  letter-spacing: normal;
+}
+.genre {
+  font-size: 22px;
+  line-height: 1.3;
+  letter-spacing: normal;
+  color: v.$btn-light-color;
+}
+
+@include m.tablet {
+  .img {
+    width: 100%;
+    // border-radius: 0px 226px 0px 123px;
+    border-radius: 0px 200px 0px 200px;
+    &::after {
+      content: "";
+      border-radius: 0px 190px 0px 190px;
+    }
+  }
+}
+@include m.mobile {
+  .img {
+    min-height: 460px;
+    border-radius: 0px 123px 0px 123px;
+    &::after {
+      content: "";
+      border-radius: 0px 113px 0px 113px;
+    }
+  }
+}

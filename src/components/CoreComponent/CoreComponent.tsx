@@ -5,6 +5,7 @@ import BlogList from "../BlogList";
 import ClientList from "../ClientList";
 import Awords from "../Awords/Awords";
 import FeaturesList from "../FeaturesList/FeaturesList";
+import CaseList from "../CaseList/CaseList";
 
 const CoreComponent = () => {
   return (
@@ -15,6 +16,7 @@ const CoreComponent = () => {
       <FeaturesList />
       <BlogList />
       <ClientList />
+      <CaseList />
     </main>
   );
 };
