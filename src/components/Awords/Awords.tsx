@@ -8,7 +8,7 @@ const Awords = () => {
   return (
     <section className={styles.brand} data-aos="fade-rigsh">
       <div className="container">
-        <div className={styles.wrapper}>{showAwords} </div>
+        <div className={styles.wrapper}>{showAwords}</div>
       </div>
     </section>
   );

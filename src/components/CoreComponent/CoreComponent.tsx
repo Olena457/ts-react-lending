@@ -12,8 +12,8 @@ const CoreComponent = () => {
       <First />
       <Awords />
       <AboutAgency />
-      <BlogList />
       <FeaturesList />
+      <BlogList />
       <ClientList />
     </main>
   );

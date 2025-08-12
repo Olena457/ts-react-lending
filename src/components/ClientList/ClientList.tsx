@@ -13,7 +13,7 @@ const ClientList = () => {
         <Title
           tag="h2"
           className={styles.title}
-          text="Real Stories. Real Feedback. InterSpace."
+          text="Real Stories. Real Feedback."
         />
       </section>
       <div className={styles.wrapper}>{showReviews}</div>

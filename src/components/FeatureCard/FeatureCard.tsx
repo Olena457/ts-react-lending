@@ -11,8 +11,10 @@ type Props = {
 const FeatureCard: React.FC<Props> = ({ title, content, icon }) => {
   return (
     <article className={styles.card}>
-      <img src={icon} alt={`${title} icon`} className={styles.icon} />
-      <Title tag="h3" text={title} className={styles.title} />
+      <div className={styles.header}>
+        <img src={icon} alt={`${title} icon`} className={styles.icon} />
+        <Title tag="h3" text={title} className={styles.title} />
+      </div>
       <p className={styles.content}>{content} </p>
     </article>
   );

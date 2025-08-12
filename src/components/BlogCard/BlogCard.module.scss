@@ -3,7 +3,7 @@
 .card {
   padding: 15px;
   border: 1px solid v.$second-bg-color;
-  border-radius: 0px 45px 0px 45px;
+  border-radius: 45px;
 }
 .title {
   margin-bottom: 30px;
@@ -31,10 +31,10 @@
 
 .img {
   position: relative;
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
   width: 100%;
   height: 300px;
-  border-radius: 0px 45px 0px 45px;
+  border-radius: 45px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -61,8 +61,11 @@
   height: 35px;
   padding: 5px;
   font-size: 16px;
-  color: v.$btn-light-color;
   background-color: v.$main-brand-color;
+  // color: v.$btn-light-color;
+  // color: v.$main-bg-color;
+  color: v.$btn-light-color;
+  // background-color: v.$btn-rgb-color;
   line-height: 1.2;
   letter-spacing: 0.22px;
   border-radius: 0px 8px 0px 8px;

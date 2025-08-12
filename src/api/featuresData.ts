@@ -8,28 +8,28 @@ export const featuresData: IFeaturesCard[] = [
   {
     id: 1,
     icon: crown,
-    title: "Creative Concepts",
+    title: "Creative",
     content:
       "We craft inspiring interiors that balance aesthetics and functionality for modern living.",
   },
   {
     id: 2,
     icon: exclusive,
-    title: "Tailored Furnishings",
+    title: "Furniture",
     content:
       "Custom furniture solutions that elevate comfort and reflect your unique style.",
   },
   {
     id: 3,
     icon: smile,
-    title: "Smart Flooring",
+    title: "Smart",
     content:
       "Durable and elegant surfaces designed to enhance every step of your space.",
   },
   {
     id: 4,
     icon: srvice,
-    title: "Premium Service",
+    title: "Service",
     content:
       "From concept to completion, we ensure a seamless and satisfying design experience.",
   },

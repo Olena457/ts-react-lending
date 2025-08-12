@@ -45,7 +45,7 @@
   display: flex;
   align-items: center;
   gap: 20px;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   min-height: 120px;
 }
 .photo {
@@ -63,16 +63,18 @@
   margin-bottom: 10px;
   font-size: 25px;
   line-height: 1;
+  color: v.$main-brand-color;
   letter-spacing: normal;
 }
 .location {
-  color: v.$text-color;
+  color: v.$btn-light-color;
   font-size: 18px;
   line-height: 0.9;
   letter-spacing: normal;
 }
 .text {
   font-size: 18px;
+  color: v.$text-color;
   line-height: 1.28;
   letter-spacing: normal;
 }
@@ -121,7 +123,7 @@
     line-height: 1;
   }
   .text {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.3;
   }
 }
