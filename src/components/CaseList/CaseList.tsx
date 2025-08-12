@@ -6,7 +6,7 @@ import Title from "../Title/Title";
 const CaseList = () => {
   const showCases = caseData.map((item) => <Case key={item.id} data={item} />);
   return (
-    <section id="services" className={styles.projects}>
+    <section className={styles.projects}>
       <div className="container">
         <div className={styles.top} data-aos="fade-down">
           <Title tag="h2" className={styles.title} text="Active Projects" />

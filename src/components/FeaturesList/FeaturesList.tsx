@@ -1,4 +1,5 @@
 import FeatureCard from "../FeatureCard/FeatureCard";
+// import Title from "../Title";
 import { featuresData } from "../../api/featuresData";
 import styles from "./FeaturesList.module.scss";
 
@@ -12,7 +13,7 @@ const FeaturesList = () => {
     />
   ));
   return (
-    <section className={styles.features} data-aos="zoom-in">
+    <section id="services" className={styles.features} data-aos="zoom-in">
       <div className="container">
         <div className={styles.wrapper}> {showCards} </div>
       </div>

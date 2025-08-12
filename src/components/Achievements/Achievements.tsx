@@ -1,34 +1,35 @@
 import Title from "../Title";
-import styles from "./Statistic.module.scss";
+import styles from "./Achievements.module.scss";
 
-const Statistic = () => {
+const Achievements = () => {
   return (
     <section className={styles.statistic} data-aos="fade-up">
       <div className="container">
+        <Title tag="h2" className={styles.title} text="Our Statiscs" />
         <div className={styles.wrapper}>
-          <article>
-            <Title tag="h3" className={styles.num} text="12" />
-            <p className={styles.text}>12 Years in the Field</p>
-          </article>
+          <div>
+            <Title tag="h3" className={styles.num} text="10" />
+            <p className={styles.text}>Experiance Years</p>
+          </div>
           <div className={styles.divider}></div>
-          <article>
-            <Title tag="h3" className={styles.num} text="5к" />
-            <p className={styles.text}>5k Completed Projects</p>
-          </article>
+          <div>
+            <Title tag="h3" className={styles.num} text="5k" />
+            <p className={styles.text}>Success Project</p>
+          </div>
           <div className={styles.divider}></div>
-          <article>
-            <Title tag="h3" className={styles.num} text="1к" />
-            <p className={styles.text}>1k Projects in Progress</p>
-          </article>
+          <div>
+            <Title tag="h3" className={styles.num} text="1k" />
+            <p className={styles.text}>Active Project</p>
+          </div>
           <div className={styles.divider}></div>
-          <article>
-            <Title tag="h3" className={styles.num} text="4к" />
-            <p className={styles.text}>4k Satisfied Clients</p>
-          </article>
+          <div>
+            <Title tag="h3" className={styles.num} text="4k" />
+            <p className={styles.text}>Happy Customers</p>
+          </div>
         </div>
       </div>
     </section>
   );
 };
 
-export default Statistic;
+export default Achievements;

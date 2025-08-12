@@ -2,16 +2,19 @@
 @use "../../styles/variables" as v;
 
 .features {
-  padding-bottom: 100px;
+  padding: 70px 0px 0px 0px;
   background-color: v.$main-brand-color;
 }
 .wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
+
 @include m.tablet {
   .features {
-    padding-block: 70px;
+    padding: 50px0px 0px 0px;
+
+    // padding-block: 70px;
   }
 }
 
@@ -26,6 +29,9 @@
   }
 }
 @include m.mobile {
+  .features {
+    padding: 30px0px 0px 0px;
+  }
   .wrapper {
     grid-template-columns: repeat(1fr);
   }

@@ -1,12 +1,14 @@
 @use "../../styles/variables" as v;
 @use "../../styles/mixins" as m;
-
+.brand {
+  padding: 70px 0px;
+}
 .wrapper {
   display: flex;
   // background: v.$main-bg-color;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 110px;
+  // margin-bottom: 110px;
 
   & > img {
     max-width: 200px;
@@ -17,9 +19,12 @@
   }
 }
 @include m.tablet {
+  .brand {
+    padding: 50px 0px;
+  }
   .wrapper {
     width: 100%;
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
     gap: 20px;
     overflow-x: scroll;
     scrollbar-width: none;
@@ -34,6 +39,9 @@
   }
 }
 @include m.mobile {
+  .brand {
+    padding: 30px 0px;
+  }
   .wrapper {
     & > img {
       max-width: 60px;

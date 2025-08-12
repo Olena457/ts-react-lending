@@ -1,6 +1,7 @@
 import { socialLinks } from "../../api/socialLinks";
 import BrandComponent from "../BrandComponent/BrandComponent";
 import ButtonBack from "../ButtonBack/ButtonBack";
+
 import styles from "./FooterComponent.module.scss";
 
 import Title from "../Title";
@@ -21,8 +22,6 @@ const Footer = () => {
 
   return (
     <footer id="contact" className={styles.footer} data-aos="fade-up">
-      {/* <div className={styles.line}></div> */}
-
       <div className="container">
         <div className={styles.wrapper}>
           <div>
@@ -57,7 +56,7 @@ const Footer = () => {
           <div>
             <Title tag="h3" className={styles.title} text="Contact" />
             <div className={styles.links}>
-              <div>
+              <div className={styles.container}>
                 <a
                   href="https://www.google.com/maps?q=Khreshchatyk+Street,+22,+Kyiv,+Ukraine"
                   target="_blank"
@@ -66,16 +65,17 @@ const Footer = () => {
                   22 Khreshchatyk Street, Kyiv, Ukraine
                 </a>
               </div>
-              <div>
+              <div className={styles.container}>
                 <a href="mailto:contact@interspace.com">
                   contact@interspace.com
                 </a>
               </div>
-              <div>
+              <div className={styles.container}>
                 <a href="tel:+380931234567">+38 (093) 123 45 67</a>
               </div>
             </div>
           </div>
+
           <ButtonBack />
         </div>
       </div>

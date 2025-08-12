@@ -3,10 +3,6 @@
 
 .about {
   margin-bottom: 140px;
-  // background-color: v.$main-brand-color;
-  // background-color: v.$second-bg-color;
-  background: #ffffff;
-  // background-color: v.$main-bg-color;
 }
 .wrapper {
   display: flex;
@@ -27,7 +23,6 @@
   line-height: 1.4;
   letter-spacing: normal;
   color: v.$main-brand-color;
-  // color: v.$btn-rgb-color;
 }
 .text {
   font-size: 22px;
@@ -52,7 +47,8 @@
   height: 50px;
   padding: 30px;
   border-radius: 50%;
-  background-color: v.$second-bg-color;
+  background-color: v.$border-color;
+  box-shadow: 5px 5px 20px #9f9b9b;
 }
 .tel {
   color: v.$text-color;
@@ -68,8 +64,7 @@
   line-height: 36px;
 }
 .btn {
-  background-color: v.$main-brand-color;
-  // background-color: v.$btn-rgb-color;
+  background-color: v.$btn-rgb-color;
   border-color: v.$btn-light-color;
 }
 .img {
@@ -77,7 +72,6 @@
   width: 50%;
   height: 635px;
   // border-radius: 0px 185px 0px 185px;
-  // border: 1px solid red;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

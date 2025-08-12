@@ -2,19 +2,21 @@
 @use "../../styles/mixins" as m;
 
 .blogs {
-  margin-bottom: 140px;
+  padding: 70px 0px;
   background-color: v.$main-brand-color;
   // background-color: v.$main-bg-color;
+  // margin-bottom: 140px;
 }
 .top {
   margin-bottom: 70px;
   text-align: center;
 }
 .titleMain {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   color: v.$second-bg-color;
   font-size: 42px;
   line-height: 0.9;
+  text-align: center;
   letter-spacing: normal;
 }
 .text {
@@ -32,11 +34,12 @@
 }
 @include m.tablet {
   .titleMain {
-    font: size 32px;
+    font-size: 32px;
     line-height: 1.2;
   }
   .blogs {
-    margin-bottom: 70px;
+    padding: 50px 0px;
+    // margin-bottom: 70px;
   }
   .top {
     margin-bottom: 50px;
@@ -48,6 +51,9 @@
   }
 }
 @include m.mobile {
+  .blogs {
+    padding: 30px 0px;
+  }
   .titleMain {
     font-size: 30px;
     line-height: 1.3;

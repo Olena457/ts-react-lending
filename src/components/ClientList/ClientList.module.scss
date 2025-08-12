@@ -2,17 +2,13 @@
 @use "../../styles/variables" as v;
 
 .reviews {
-  margin-bottom: 140px;
+  // margin-bottom: 140px;
   padding: 100px 50px 120px 50px;
   background-color: v.$main-brand-color;
-  //   background-color: v.$main-brand-color;
 }
 .title {
-  max-width: 650px;
-  margin-inline: auto;
-  // color: v.$btn-rgb-color;
   color: v.$main-brand-color;
-  margin-bottom: 50px;
+  margin: 70px 0px;
   font-size: 42px;
   line-height: 0.9;
   letter-spacing: normal;
@@ -28,27 +24,19 @@
   .wrapper {
     grid-template-columns: repeat(2, 1fr);
   }
-  .title {
-    font-size: 32px;
-    line-height: 1.2;
-  }
 }
 @include m.tablet {
   .reviews {
     margin-bottom: 70px;
     padding: 50px 30px;
   }
-
   .title {
-    max-width: 550px;
-    margin-bottom: 30px;
-    font-size: 36px;
-    line-height: 1.1;
-    // color: v.$main-brand-color;
-    // color: v.$main-brand-color;
+    margin: 70px 0px;
 
-    letter-spacing: normal;
+    font-size: 32px;
+    line-height: 1.2;
   }
+
   .wrapper {
     grid-template-columns: 1fr;
   }
@@ -56,11 +44,8 @@
 
 @include m.mobile {
   .title {
-    font-size: 24px;
-  }
-}
-@include m.small-mobile {
-  .title {
+    margin: 30px 0px;
+
     font-size: 30px;
     line-height: 1.3;
   }

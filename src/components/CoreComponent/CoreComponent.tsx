@@ -1,9 +1,10 @@
 import style from "./CoreComponent.module.scss";
 import AboutAgency from "./../AboutAgency/AboutAgency";
 import First from "./../First/First";
-import BlogList from "../BlogList";
-import ClientList from "../ClientList";
 import Awords from "../Awords/Awords";
+import BlogList from "../BlogList";
+import Achievements from "../Achievements";
+import ClientList from "../ClientList";
 import FeaturesList from "../FeaturesList/FeaturesList";
 import CaseList from "../CaseList/CaseList";
 
@@ -16,6 +17,7 @@ const CoreComponent = () => {
       <FeaturesList />
       <BlogList />
       <ClientList />
+      <Achievements />
       <CaseList />
     </main>
   );
