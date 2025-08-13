@@ -1,22 +1,19 @@
 import type { IDesignTeamCard } from "../types/IDesignTeamCard";
-import Icon from "../assets/icons/main/quote.svg";
 import TeamLogo from "../assets/icons/main/teamIcon.svg";
 
 const designTeamData: IDesignTeamCard[] = [
   {
     id: 1,
-    photo: "https://ftp.goit.study/img/avatars/29.jpg",
-    icon: Icon,
+    photo: "https://ftp.goit.study/img/avatars/27.jpg",
     logo: TeamLogo,
     name: "Alexander",
     position: "Co-founder, Head Architect",
     description:
-      "Head architect and visionary at SATI Architects. Responsible for creating unique design concepts and original architectural solutions.",
+      "Interspace Head Architect. Visionary Designer.Creator of unique concepts.",
   },
   {
     id: 2,
-    photo: "https://ftp.goit.study/img/avatars/30.jpg",
-    icon: Icon,
+    photo: "https://ftp.goit.study/img/avatars/29.jpg",
     logo: TeamLogo,
     name: "Taras",
     position: "Co-founder, CEO",
@@ -26,7 +23,6 @@ const designTeamData: IDesignTeamCard[] = [
   {
     id: 3,
     photo: "https://ftp.goit.study/img/avatars/28.jpg",
-    icon: Icon,
     logo: TeamLogo,
     name: "Pavlo",
     position: "Architect and Team Lead",
@@ -35,8 +31,7 @@ const designTeamData: IDesignTeamCard[] = [
   },
   {
     id: 4,
-    photo: "https://ftp.goit.study/img/avatars/27.jpg",
-    icon: Icon,
+    photo: "https://ftp.goit.study/img/avatars/30.jpg",
     logo: TeamLogo,
     name: "Maria",
     position: "Interior Designer",
@@ -46,7 +41,6 @@ const designTeamData: IDesignTeamCard[] = [
   {
     id: 5,
     photo: "https://ftp.goit.study/img/avatars/26.jpg",
-    icon: Icon,
     logo: TeamLogo,
     name: "Ksenia",
     position: "3D Visualization Specialist",
@@ -56,12 +50,11 @@ const designTeamData: IDesignTeamCard[] = [
   {
     id: 6,
     photo: "https://ftp.goit.study/img/avatars/25.jpg",
-    icon: Icon,
     logo: TeamLogo,
     name: "Anastasia",
-    position: "Interior Designer",
+    position: "Furniture Designer",
     description:
-      "Interior designer specializing in space furnishing and functional composition.",
+      "Furniture Designer.Furniture that fits and elevates interiors.",
   },
 ];
 

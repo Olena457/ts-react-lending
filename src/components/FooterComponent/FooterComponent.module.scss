@@ -7,7 +7,8 @@
 }
 .wrapper {
   display: grid;
-  grid-template-columns: 320px 1fr 320px;
+  // grid-template-columns: 320px 1fr 320px;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 80px;
   padding: 70px 0px;
   // margin-bottom: 60px;
@@ -16,7 +17,8 @@
   margin-bottom: 15px;
 }
 .text {
-  margin: 10px 0px 18px 0px;
+  margin-top: 10px;
+  // margin: 10px 0px 18px 0px;
   color: v.$second-bg-color;
   font-size: 22px;
   line-height: 1.5;
@@ -24,14 +26,15 @@
   line-height: normal;
   letter-spacing: 0.22px;
 }
-// .address > a {
-//   color: v.$second-bg-color;
+.address > a {
+  color: v.$second-bg-color;
 
-//   & > a:hover {
-//     color: v.$btn-rgb-color;
-//   }
-// }
+  & > a:hover {
+    color: v.$btn-rgb-color;
+  }
+}
 .socials {
+  margin-top: 20px;
   display: flex;
   gap: 30px;
 }

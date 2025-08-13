@@ -1,20 +1,6 @@
 @use "../../styles/mixins" as m;
 @use "../../styles/variables" as v;
 
-// .card {
-//   padding: 50px 35px 30px;
-//   background-color: v.$main-bg-color;
-//   border-radius: 30px;
-//   transition: hover 0.3s;
-
-//     border-radius: 0px 70px 0px 0px;
-//     border: 1px solid v.$btn-light-color;
-
-//   &:hover {
-//     box-shadow: 5px 5px 20px v.$box-chadow-color;
-//   }
-// }
-
 .card {
   position: relative;
   padding: 50px 35px 30px;
@@ -22,6 +8,10 @@
   border-radius: 30px;
   overflow: hidden;
   box-shadow: 5px 5px 20px v.$box-chadow-color;
+
+  // &:hover {
+  //   box-shadow: 5px 5px 20px v.$box-chadow-color;
+  // }
 
   &::before {
     content: "";

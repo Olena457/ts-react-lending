@@ -30,8 +30,8 @@ const Footer = () => {
               Renowned worldwide for excellence in architectural and interior
               design solutions.
             </p>
-            <div className={styles.socials}>{showSocials}</div>
           </div>
+
           <div>
             <Title tag="h3" className={styles.title} text="Explore" />
             <ul className={styles.links}>
@@ -74,6 +74,7 @@ const Footer = () => {
                 <a href="tel:+380931234567">+38 (093) 123 45 67</a>
               </div>
             </div>
+            <div className={styles.socials}>{showSocials}</div>
           </div>
 
           <ButtonBack />

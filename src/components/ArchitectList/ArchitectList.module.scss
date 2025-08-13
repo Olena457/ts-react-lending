@@ -1,0 +1,58 @@
+@use "../../styles/mixins" as m;
+@use "../../styles/variables" as v;
+
+.teamSection {
+  padding: 100px 0;
+}
+
+.title {
+  color: v.$main-brand-color;
+  margin: 70px 0;
+  font-size: 42px;
+  line-height: 0.9;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+// Media Queries for responsiveness
+@include m.desktop {
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@include m.tablet {
+  .teamSection {
+    padding: 50px 0;
+  }
+
+  .title {
+    margin: 50px 0;
+    font-size: 32px;
+  }
+
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+@include m.mobile {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+@include m.small-mobile {
+  .title {
+    margin: 30px 0;
+    font-size: 30px;
+  }
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}

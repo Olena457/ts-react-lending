@@ -1,9 +1,5 @@
 @use "./variables" as v;
 
-// @mixin large {
-//   @media (max-width: v.$large-size) {
-//     @content;
-//   }
 @mixin desktop {
   @media (max-width: v.$desktop-size) {
     @content;

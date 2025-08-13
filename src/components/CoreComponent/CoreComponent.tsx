@@ -1,4 +1,3 @@
-import designTeamData from "../../api/designTeamData";
 import style from "./CoreComponent.module.scss";
 import AboutAgency from "./../AboutAgency/AboutAgency";
 import First from "./../First/First";
@@ -8,7 +7,7 @@ import Achievements from "../Achievements";
 import ClientList from "../ClientList";
 import FeaturesList from "../FeaturesList/FeaturesList";
 import CaseList from "../CaseList/CaseList";
-import CardsSlider from "../CardsSlider/CardsSlider";
+import ArchitectList from "../ArchitectList/ArchitectList";
 
 const CoreComponent = () => {
   return (
@@ -21,7 +20,7 @@ const CoreComponent = () => {
       <ClientList />
       <Achievements />
       <CaseList />
-      <CardsSlider cards={designTeamData} />
+      <ArchitectList />
     </main>
   );
 };
