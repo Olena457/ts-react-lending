@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./App.scss";
 import Burger from "./components/Burger";
 import HeaderComponent from "./components/HeaderComponent";
 import CoreComponent from "./components/CoreComponent";
