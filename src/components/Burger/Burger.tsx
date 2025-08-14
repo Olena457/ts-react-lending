@@ -24,7 +24,7 @@ const Burger: React.FC<Props> = ({ isOpen, onClick }) => {
 
   const showCategories = mainCategories.map((item) => (
     <ul key={item.id}>
-      <a href={item.link} onClick={onClick} className={styles.linkBurger}>
+      <a href={`#${item.link}`} onClick={onClick} className={styles.linkBurger}>
         {item.category}
       </a>
     </ul>
