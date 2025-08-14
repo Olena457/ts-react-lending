@@ -1,11 +1,6 @@
 @use "../../styles/variables" as v;
 @use "../../styles/mixins" as m;
 
-// .statistic {
-//   margin-bottom: 100px;
-//   padding-block: 140px;
-// }
-
 .statistic {
   padding: 70px 0px 50px 0px;
 }
@@ -37,6 +32,12 @@
   line-height: 1.4;
   letter-spacing: normal;
   text-align: center;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: v.$btn-rgb-color;
+  }
 }
 .divider {
   height: 95px;

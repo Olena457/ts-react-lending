@@ -33,11 +33,11 @@
 }
 .call {
   color: v.$text-color;
-
   display: flex;
   align-items: center;
   gap: 20px;
 }
+
 .icon {
   display: flex;
   justify-content: center;
@@ -49,6 +49,7 @@
   background-color: v.$border-color;
   box-shadow: 5px 5px 20px #9f9b9b;
 }
+
 .tel {
   color: v.$text-color;
   display: flex;
@@ -60,11 +61,24 @@
 
 .number {
   font-size: 24px;
+  color: v.$main-second-color;
   line-height: 36px;
+  cursor: poiner;
+
+  &:hover,
+  &:focus {
+    color: v.$btn-rgb-color;
+  }
 }
+
 .btn {
   background-color: v.$btn-rgb-color;
   border-color: v.$btn-light-color;
+
+  &:hover,
+  &:focus {
+    box-shadow: 5px 5px 20px v.$btn-light-color;
+  }
 }
 .img {
   position: relative;
@@ -74,6 +88,7 @@
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 0px 165px 0px 165px;
+  box-shadow: 5px 5px 20px v.$box-chadow-color;
 
   &::after {
     content: "";
@@ -120,7 +135,6 @@
   }
   .img {
     width: 100%;
-    // border-radius: 0px 226px 0px 123px;
     border-radius: 0px 200px 0px 200px;
     &::after {
       content: "";
@@ -129,6 +143,10 @@
   }
 }
 @include m.mobile {
+  .btn {
+    padding: 12px 18px 12px 18px;
+  }
+
   .about {
     margin-bottom: 80px;
   }

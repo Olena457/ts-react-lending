@@ -1,5 +1,5 @@
-import style from "./BrandComponent.module.scss";
 import logoIcon from "../../assets/icons/logo/logo.svg";
+import style from "./BrandComponent.module.scss";
 
 const BrandComponent = () => {
   return (

@@ -1,7 +1,7 @@
 import Button from "../Button";
 import Title from "../Title";
 import styles from "./First.module.scss";
-import arrowIcon from "../../assets/icons/main/arrowIcon.svg";
+import arrowIcon from "../../assets/icons/main/arrowLeft.svg";
 
 const First = () => {
   return (

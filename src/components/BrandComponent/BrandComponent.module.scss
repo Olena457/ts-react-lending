@@ -8,16 +8,17 @@
 }
 .logo {
   display: flex;
+  align-items: flex-end;
   justify-content: center;
-  transition-duration: 0.3s ease;
+  transition: 0.3s ease;
+
   &:hover {
     transform: scale(1.05);
   }
 }
 
 .text {
-  display: flex;
-  align-self: center;
+  font-size: 24px;
   transition-duration: 0.3s ease;
   color: v.$btn-light-color;
 

@@ -3,12 +3,11 @@
 
 .footer {
   position: relative;
-  background-color: v.$main-second-color;
+  background-color: v.$footer-second-color;
 }
 .wrapper {
   display: grid;
-  // justify-items: center;
-  // align-items: center;
+
   grid-template-columns: 320px 1fr 1fr 320px;
   gap: 80px;
   padding: 70px 0px;
@@ -22,14 +21,21 @@
   line-height: 1.6;
   letter-spacing: normal;
 }
+// .address > a {
+//   color: v.$second-bg-color;
+
+//   & > a:hover {
+//     color: v.$btn-rgb-color;
+//   }
+// }
 .address > a {
   color: v.$second-bg-color;
 
-  & > a:hover {
+  &:hover,
+  &:focus {
     color: v.$btn-rgb-color;
   }
 }
-
 .socials {
   margin-top: 20px;
   display: flex;
@@ -44,30 +50,40 @@
     transform: scale(1.1);
   }
 }
+
 .title {
   margin-bottom: 20px;
   font-size: 26px;
   line-height: 1.4;
   letter-spacing: normal;
   color: v.$second-bg-color;
+  color: v.$btn-light-color;
 }
 
 .links {
+  .container > a {
+    color: v.$second-bg-color;
+    &:hover,
+    &:focus {
+      color: v.$btn-rgb-color;
+    }
+  }
+
   & > li {
     margin-bottom: 20px;
-  }
+    & > a {
+      color: v.$second-bg-color;
+      font-size: 22px;
+      line-height: 1.4;
+      transition: color 0.3s ease;
 
-  & > a {
-    color: v.$second-bg-color;
-    font-size: 22px;
-    line-height: 1.4;
-    transition: hover 0.3s;
-  }
-  &:hover {
-    color: v.$btn-rgb-color;
+      &:hover,
+      &:focus {
+        color: v.$btn-rgb-color;
+      }
+    }
   }
 }
-
 @media (max-width: 1200px) {
   .wrapper {
     gap: 30px;
