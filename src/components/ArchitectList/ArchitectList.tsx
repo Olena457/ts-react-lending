@@ -10,7 +10,7 @@ const ArchitectList = () => {
 
   return (
     <div className="container">
-      <section className={styles.teamSection}>
+      <section id="Team" className={styles.teamSection}>
         <Title tag="h2" className={styles.title} text="Meet Our Design Team" />
         <div className={styles.wrapper}>{showTeam}</div>
       </section>

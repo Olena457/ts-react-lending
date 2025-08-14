@@ -21,7 +21,7 @@ const Footer = () => {
   ));
 
   return (
-    <footer id="contact" className={styles.footer} data-aos="fade-up">
+    <footer id="contacts" className={styles.footer} data-aos="fade-up">
       <div className="container">
         <div className={styles.wrapper}>
           <div>
@@ -31,7 +31,6 @@ const Footer = () => {
               design solutions.
             </p>
           </div>
-
           <div>
             <Title tag="h3" className={styles.title} text="Explore" />
             <ul className={styles.links}>
@@ -41,15 +40,29 @@ const Footer = () => {
               <li>
                 <a href="#">About Us</a>
               </li>
+              <li>
+                <a href="#">Awords</a>
+              </li>
 
               <li>
-                <a href="#"> Service</a>
+                <a href="#">Service</a>
               </li>
               <li>
                 <a href="#">Projects</a>
               </li>
+            </ul>
+          </div>
+          <div>
+            <Title tag="h3" className={styles.title} text="Details" />
+            <ul className={styles.links}>
               <li>
-                <a href="#">Contact Us</a>
+                <a>Registration</a>
+              </li>
+              <li>
+                <a>Consultation</a>
+              </li>
+              <li>
+                <a>Licenses</a>
               </li>
             </ul>
           </div>

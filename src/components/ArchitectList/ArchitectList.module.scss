@@ -2,12 +2,12 @@
 @use "../../styles/variables" as v;
 
 .teamSection {
-  padding: 100px 0;
+  padding-bottom: 70px;
 }
 
 .title {
   color: v.$main-brand-color;
-  margin: 70px 0;
+  margin-bottom: 70px;
   font-size: 42px;
   line-height: 0.9;
   letter-spacing: normal;
@@ -20,7 +20,6 @@
   gap: 20px;
 }
 
-// Media Queries for responsiveness
 @include m.desktop {
   .wrapper {
     grid-template-columns: repeat(2, 1fr);
@@ -29,7 +28,7 @@
 
 @include m.tablet {
   .teamSection {
-    padding: 50px 0;
+    padding-bottom: 50px;
   }
 
   .title {
@@ -42,6 +41,9 @@
   }
 }
 @include m.mobile {
+  .teamSection {
+    padding-bottom: 30px;
+  }
   .wrapper {
     grid-template-columns: 1fr;
   }

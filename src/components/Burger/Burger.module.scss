@@ -7,7 +7,7 @@
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: v.$main-brand-color;
+  // background-color: v.$main-brand-color;
   background-color: v.$main-second-color;
   z-index: 10000;
   transition: all 0.3 ease-in;
@@ -25,9 +25,6 @@
 .none {
   display: none;
 }
-// .none {
-//   right: -5000px;
-// }
 
 .close {
   position: absolute;
@@ -38,17 +35,17 @@
 
 .linkBurger {
   position: relative;
-  color: v.$btn-rgb-color;
+  color: v.$second-bg-color;
   font-size: 32px;
   line-height: 30px;
   letter-spacing: 0.4px;
   transition: color 0.3s ease;
 
   &:hover {
-    color: v.$second-bg-color;
+    color: v.$btn-rgb-color;
 
     &::after {
-      // content: "";
+      content: "";
       width: 100%;
     }
   }

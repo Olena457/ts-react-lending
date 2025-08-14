@@ -2,8 +2,8 @@
 @use "../../styles/variables" as v;
 
 .features {
-  padding: 70px 0px 0px 0px;
-  background-color: v.$main-brand-color;
+  padding: 70px 0px 70px 0px;
+  background-color: v.$second-bg-color;
 }
 .wrapper {
   display: grid;
@@ -12,9 +12,7 @@
 
 @include m.tablet {
   .features {
-    padding: 50px0px 0px 0px;
-
-    // padding-block: 70px;
+    padding: 50px 0px 50px 0px;
   }
 }
 
@@ -30,7 +28,7 @@
 }
 @include m.mobile {
   .features {
-    padding: 30px0px 0px 0px;
+    padding: 30px 0px 30px 0px;
   }
   .wrapper {
     grid-template-columns: repeat(1fr);

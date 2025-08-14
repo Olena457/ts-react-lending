@@ -13,7 +13,7 @@ const FeaturesList = () => {
     />
   ));
   return (
-    <section id="services" className={styles.features} data-aos="zoom-in">
+    <section id="features" className={styles.features} data-aos="zoom-in">
       <div className="container">
         <div className={styles.wrapper}> {showCards} </div>
       </div>

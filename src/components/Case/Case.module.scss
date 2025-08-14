@@ -8,6 +8,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 0px 165px 0px 165px;
+
   &::after {
     content: "";
     position: absolute;
@@ -20,10 +21,6 @@
     pointer-events: none;
   }
 }
-// .wrapInfo {
-//   display: flex;
-//   gap: 10px;
-// }
 
 .info {
   display: flex;
@@ -50,18 +47,20 @@
 @include m.tablet {
   .img {
     width: 100%;
-    // border-radius: 0px 226px 0px 123px;
     border-radius: 0px 200px 0px 200px;
+
     &::after {
       content: "";
       border-radius: 0px 190px 0px 190px;
     }
   }
 }
+
 @include m.mobile {
   .img {
     min-height: 460px;
     border-radius: 0px 123px 0px 123px;
+
     &::after {
       content: "";
       border-radius: 0px 113px 0px 113px;

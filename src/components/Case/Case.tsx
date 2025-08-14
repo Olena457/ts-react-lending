@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "./Case.module.scss";
 import type { ICase } from "../../types/ICase";
+import styles from "./Case.module.scss";
 import Title from "../Title/Title";
 
 type Props = {

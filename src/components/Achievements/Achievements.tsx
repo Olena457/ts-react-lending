@@ -3,7 +3,7 @@ import styles from "./Achievements.module.scss";
 
 const Achievements = () => {
   return (
-    <section className={styles.statistic} data-aos="fade-up">
+    <section id="Statistic" className={styles.statistic} data-aos="fade-up">
       <div className="container">
         <Title tag="h2" className={styles.title} text="Our Statiscs" />
         <div className={styles.wrapper}>

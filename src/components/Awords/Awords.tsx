@@ -6,7 +6,7 @@ const Awords = () => {
     <img src={item.logo} alt={item.name} key={item.id} />
   ));
   return (
-    <section className={styles.brand} data-aos="fade-rigsh">
+    <section id="awords" className={styles.brand} data-aos="fade-rigsh">
       <div className="container">
         <div className={styles.wrapper}>{showAwords}</div>
       </div>

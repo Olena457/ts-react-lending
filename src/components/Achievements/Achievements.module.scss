@@ -35,9 +35,7 @@
   color: v.$main-brand-color;
   font-size: 60px;
   line-height: 1.4;
-  // font-weight: 700;
   letter-spacing: normal;
-  // text-transform: uppercase;
   text-align: center;
 }
 .divider {
@@ -48,12 +46,6 @@
 @include m.tablet {
   .wrapper {
     text-wrap: wrap;
-    // .wrapper {
-    //   grid-template-rows: 1fr;
-
-    // & > div {
-    //   width: 50%;
-    // }
   }
   .title {
     font-size: 32px;
@@ -96,15 +88,8 @@
     height: 65px;
     width: 0.5px;
   }
-  // .wrapper {
-  //   grid-template-columns: 1fr;
-  // }
 }
-// @include m.small-mobile {
-//   .wrapper {
-//     grid-template-columns: 1fr;
-//   }
-// }
+
 @include m.small-mobile {
   .divider {
     height: 65px;

@@ -1,37 +1,33 @@
 @use "../../styles/variables" as v;
 
 .card {
-  padding: 15px;
-  border: 1px solid v.$second-bg-color;
   border-radius: 45px;
+  box-shadow: 5px 5px 20px v.$main-rgba-color;
 }
 .title {
-  margin-bottom: 30px;
+  margin-top: 10px;
   font-size: 26px;
   line-height: 1.34;
   padding: 5px 15px;
   width: 100%;
   letter-spacing: 0.5px;
-  background-color: rgba(0, 0, 0, 0.2);
   border-radius: 5px;
-  // color: v.$second-bg-color;
+  background-color: rgba(0, 0, 0, 0.2);
   color: v.$main-bg-color;
 }
+
 .date {
   position: absolute;
-  top: 0px;
+  top: 5px;
   left: 24px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.22px;
-
-  // color: v.$main-bg-color;
   color: v.$main-second-color;
 }
 
 .img {
   position: relative;
-  // margin-bottom: 20px;
   width: 100%;
   height: 300px;
   border-radius: 45px;
@@ -42,11 +38,23 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 20px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 1px solid v.$main-bg-color;
+    border-radius: 45px;
+    pointer-events: none;
+  }
 }
 
 .bottom {
   position: absolute;
-  bottom: 10px;
+  bottom: 15px;
   left: 0;
   width: 100%;
   display: flex;
@@ -62,10 +70,7 @@
   padding: 5px;
   font-size: 16px;
   background-color: v.$main-brand-color;
-  // color: v.$btn-light-color;
-  // color: v.$main-bg-color;
   color: v.$btn-light-color;
-  // background-color: v.$btn-rgb-color;
   line-height: 1.2;
   letter-spacing: 0.22px;
   border-radius: 0px 8px 0px 8px;

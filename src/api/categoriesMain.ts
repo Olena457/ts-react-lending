@@ -13,17 +13,27 @@ export const mainCategories: MainCategory[] = [
   },
   {
     id: 3,
-    category: "Services",
-    link: "services",
+    category: "Features",
+    link: "features",
   },
   {
     id: 4,
-    category: "Projects",
-    link: "pages",
+    category: "Awords",
+    link: "awords",
   },
   {
     id: 5,
-    category: "Contact Us",
-    link: "contact",
+    category: "Team",
+    link: "Team",
+  },
+  {
+    id: 6,
+    category: "Projects",
+    link: "projects",
+  },
+  {
+    id: 7,
+    category: "Contacts",
+    link: "contacts",
   },
 ];

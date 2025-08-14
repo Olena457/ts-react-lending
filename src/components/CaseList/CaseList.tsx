@@ -1,10 +1,11 @@
 import { caseData } from "../../api/caseData";
-import styles from "./CaseList.module.scss";
 import Case from "../Case/Case";
 import Title from "../Title/Title";
+import styles from "./CaseList.module.scss";
 
 const CaseList = () => {
   const showCases = caseData.map((item) => <Case key={item.id} data={item} />);
+
   return (
     <section className={styles.projects}>
       <div className="container">

@@ -13,13 +13,13 @@ const CoreComponent = () => {
   return (
     <main id="home" className={style.main}>
       <First />
-      <Awords />
-      <AboutAgency />
       <FeaturesList />
+      <AboutAgency />
       <BlogList />
-      <ClientList />
       <Achievements />
+      <ClientList />
       <CaseList />
+      <Awords />
       <ArchitectList />
     </main>
   );
