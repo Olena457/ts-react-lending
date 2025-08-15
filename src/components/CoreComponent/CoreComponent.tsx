@@ -8,6 +8,7 @@ import ClientList from "../ClientList";
 import FeaturesList from "../FeaturesList/FeaturesList";
 import CaseList from "../CaseList/CaseList";
 import ArchitectList from "../ArchitectList/ArchitectList";
+import ContactAndConsult from "../ContactAndConsult";
 
 const CoreComponent = () => {
   return (
@@ -21,6 +22,7 @@ const CoreComponent = () => {
       <CaseList />
       <Awords />
       <ArchitectList />
+      <ContactAndConsult />
     </main>
   );
 };

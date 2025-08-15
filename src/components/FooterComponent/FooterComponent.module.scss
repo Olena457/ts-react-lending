@@ -7,8 +7,7 @@
 }
 .wrapper {
   display: grid;
-
-  grid-template-columns: 320px 1fr 1fr 320px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 80px;
   padding: 70px 0px;
 }
@@ -21,13 +20,7 @@
   line-height: 1.6;
   letter-spacing: normal;
 }
-// .address > a {
-//   color: v.$second-bg-color;
 
-//   & > a:hover {
-//     color: v.$btn-rgb-color;
-//   }
-// }
 .address > a {
   color: v.$second-bg-color;
 
@@ -86,7 +79,7 @@
 }
 @media (max-width: 1200px) {
   .wrapper {
-    gap: 30px;
+    gap: 20px;
     padding: 60px 0px;
   }
   .text {
@@ -94,6 +87,7 @@
     line-height: 1.6;
   }
 }
+
 @include m.desktop {
   .wrapper {
     grid-template-columns: repeat(3, 1fr);
@@ -119,10 +113,9 @@
     }
   }
 }
-
 @include m.tablet {
   .wrapper {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 20px;
   }
   .text {
@@ -130,20 +123,7 @@
     line-height: 1.8;
   }
 }
-
 @include m.mobile {
-  .wrapper {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .text {
-    font-size: 14px;
-    line-height: 1.8;
-  }
-  .title {
-    font-size: 20px;
-  }
-}
-@include m.small-mobile {
   .wrapper {
     grid-template-columns: 1fr;
   }

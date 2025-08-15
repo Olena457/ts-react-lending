@@ -1,0 +1,100 @@
+@use "../../styles/mixins" as m;
+@use "../../styles/variables" as v;
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 100px 50px;
+  margin-bottom: 80px;
+  background-color: v.$section-brand-color;
+  border-radius: 70px;
+}
+.title {
+  color: v.$main-bg-color;
+  font-size: 48px;
+  line-height: 1.6px;
+  margin-bottom: 50px;
+  letter-spacing: normal;
+}
+.text {
+  color: v.$main-bg-color;
+  margin-bottom: 50px;
+  font-size: 22px;
+  line-height: 1.4px;
+  letter-spacing: normal;
+}
+.btn {
+  color: v.$main-bg-color;
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: normal;
+  border-color: v.$btn-light-color;
+  background-color: v.$btn-rgb-color;
+
+  &:hover,
+  &:focus {
+    box-shadow: 5px 5px 20px v.$btn-light-color;
+  }
+}
+
+@include m.tablet {
+  .contact {
+    padding: 50px 20px;
+  }
+  .title {
+    font-size: 40px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    text-align: center;
+  }
+
+  .text {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+}
+@include m.mobile {
+  .contact {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 40px 10px;
+  }
+
+  .title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  .text {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  .btn {
+    font-size: 16px;
+  }
+}
+@include m.small-mobile {
+  .contact {
+    padding: 50px 20px;
+  }
+
+  .title {
+    font-size: 30px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+  .text {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.4;
+  }
+  .btn {
+    font-size: 14px;
+  }
+}
