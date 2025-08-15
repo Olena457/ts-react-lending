@@ -3,6 +3,7 @@
 
 .contact {
   display: flex;
+  max-width: 1560px;
   flex-direction: column;
   text-align: center;
   justify-content: center;
@@ -12,6 +13,18 @@
   margin-bottom: 80px;
   background-color: v.$section-brand-color;
   border-radius: 70px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 60px;
+    pointer-events: none;
+    border: 1px solid v.$main-bg-color;
+  }
 }
 .title {
   color: v.$main-bg-color;

@@ -1,7 +1,6 @@
 import { blogsData } from "../../api/blogsData";
 import BlogCard from "../BlogCard";
 import Title from "../Title";
-
 import styles from "./BlogList.module.scss";
 
 const BlogList = () => {

@@ -2,6 +2,8 @@
 @use "../../styles/mixins" as m;
 
 .projects {
+  max-width: 1560px;
+  margin: 0 auto;
   padding: 70px 0px;
   background-color: v.$section-brand-color;
 }
@@ -11,6 +13,7 @@
 }
 .title {
   display: flex;
+  margin-inline: auto;
   margin-bottom: 20px;
   justify-content: center;
   color: v.$second-bg-color;

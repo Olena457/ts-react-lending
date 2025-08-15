@@ -2,6 +2,8 @@
 @use "../../styles/mixins" as m;
 
 .header {
+  max-width: 1560px;
+  margin: 0 auto;
   padding-block: 28px;
   background-color: v.$footer-second-color;
 }

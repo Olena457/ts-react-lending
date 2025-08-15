@@ -9,7 +9,7 @@
   font-size: 26px;
   line-height: 1.34;
   padding: 5px 15px;
-  width: 100%;
+  // width: 100%;
   letter-spacing: 0.5px;
   border-radius: 5px;
   background-color: rgba(0, 0, 0, 0.2);
@@ -38,6 +38,7 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 20px;
+  overflow: hidden;
 
   &::after {
     content: "";
@@ -69,7 +70,6 @@
   height: 35px;
   padding: 5px;
   font-size: 16px;
-  // background-color: v.$btn-rgb-color;
   background-color: v.$section-brand-color;
   color: v.$main-bg-color;
   line-height: 1.2;

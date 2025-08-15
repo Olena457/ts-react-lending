@@ -1,6 +1,5 @@
 import { socialLinks } from "../../api/socialLinks";
 import BrandComponent from "../BrandComponent/BrandComponent";
-import ButtonBack from "../ButtonBack/ButtonBack";
 
 import styles from "./FooterComponent.module.scss";
 
@@ -89,8 +88,6 @@ const Footer = () => {
             </div>
             <div className={styles.socials}>{showSocials}</div>
           </div>
-
-          <ButtonBack />
         </div>
       </div>
     </footer>
