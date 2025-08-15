@@ -2,13 +2,14 @@ import Button from "../Button";
 import Title from "../Title";
 import styles from "./First.module.scss";
 import arrowIcon from "../../assets/icons/main/arrowLeft.svg";
+import mainBackground from "../../assets/img/projects/big.jpg";
 
 const First = () => {
   return (
     <section
       className={styles.started}
       style={{
-        backgroundImage: "url(./src/assets/img/projects/big.jpg)",
+        backgroundImage: `url(${mainBackground})`,
       }}
     >
       <div className="container">

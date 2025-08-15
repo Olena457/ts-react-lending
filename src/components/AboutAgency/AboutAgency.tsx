@@ -1,6 +1,7 @@
 import styles from "./AboutAgency.module.scss";
 import arrowLeft from "../../assets/icons/main/arrowLeft.svg";
 import phoneIcon from "../../assets/icons/main/phone.svg";
+import aboutImage from "../../assets/img/projects/business.jpg";
 import Button from "../Button/Button";
 import Title from "../Title/Title";
 
@@ -43,7 +44,7 @@ const AboutAgency = () => {
           <div
             className={styles.img}
             style={{
-              backgroundImage: "url(./src/assets/img/projects/business.jpg)",
+              backgroundImage: `url(${aboutImage})`,
             }}
             data-aos="fade-up"
           ></div>
