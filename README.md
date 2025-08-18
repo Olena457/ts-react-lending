@@ -1,6 +1,51 @@
-# React + TypeScript + Vite
+# 🪐 React + TypeScript + Vite
 
-# Inrerspace
+# _`Interspace`_ — Design Agency Landing Page
+
+`Interspace` is a modern and responsive landing page template for creative design agencies. Built with a clean structure and smooth animations, it offers an elegant user experience across all devices.
+
+## ✨ Features
+
+- _Structured layout: Header, Main, Footer_
+- _Responsive design with mobile-friendly navigation_
+- _Stylish sections: About, Features, Awards, Team, Projects, Contacts_
+- _Smooth scroll animations powered by AOS_
+- _Minimalist UI with clean typography and color palette_
+
+---
+
+## 🖼️ Gallery Preview
+
+<div style="display: flex; flex-wrap: wrap; gap: 15px;">
+  <img src="./src/assets/img/projects/big.jpg" width="30%" height="130px" alt="apartment"/>
+  <img src="./src/assets/img/projects/apartment.jpg" width="30%" height="130px" alt="bedroom"/>
+  <img src="./src/assets/img/projects/kitchen.jpg" width="30%" height="130px" alt="kitchen"/>
+  <img src="./src/assets/img/projects/bedroom-1.jpg" width="30%" height="130px" alt="kitchen"/>
+</div>
+
+---
+
+## 🧭 Lending Structure
+
+| Section | Description                          |
+| ------- | ------------------------------------ |
+| Header  | Navigation menu with active styling  |
+| Main    | Agency intro, features, team, awards |
+| Footer  | Contact info and social links        |
+
+---
+
+## 🛠️ Technologies Used
+
+This landing page is built using a modern frontend stack:
+
+- **React + Vite** — fast and modular setup
+- **TypeScript** — type-safe and scalable code
+- **SASS** — for modular and maintainable styles
+- **AOS** — for scroll-triggered animations
+- **clsx** — for conditional class handling
+
+---
 
 ```js
 export default tseslint.config([
