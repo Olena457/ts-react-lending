@@ -20,7 +20,6 @@
   <img src="./src/assets/img/projects/big.jpg" width="30%" height="130px" alt="apartment"/>
   <img src="./src/assets/img/projects/apartment.jpg" width="30%" height="130px" alt="bedroom"/>
   <img src="./src/assets/img/projects/kitchen.jpg" width="30%" height="130px" alt="kitchen"/>
-  <img src="./src/assets/img/projects/bedroom-1.jpg" width="30%" height="130px" alt="kitchen"/>
 </div>
 
 ---
